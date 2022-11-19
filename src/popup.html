@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="root">
+      <h1>Random Question Picker</h1>
+      <div class="pair">
+        <label for="solved">Solved Questions</label>
+        <input type="checkbox" name="group" id="solved" checked />
+      </div>
+      <div class="pair">
+        <label for="unsolved">Unsolved Questions</label>
+        <input type="checkbox" name="group" id="unsolved" checked />
+      </div>
+      <div class="center">
+        <input type="button" value="Select Random Question" id="random_button" />
+      </div>
+      <div class="stats">
+        <h1>Statistics</h1>
+        <div id="stats_container">
+          <div class="stats_pair" id="stats_solved">Solved <span id="solved_count"></span></div>
+          <div class="stats_pair" id="stats_unsolved">
+            Unsolved <span id="unsolved_count"></span>
+          </div>
+        </div>
+        <div id="stats_container">
+          <div class="stats_pair" id="easy_solved">Easy<span id="easy_solved_count"></span></div>
+          <div class="stats_pair" id="easy_unsolved">
+            Easy<span id="easy_unsolved_count"></span>
+          </div>
+        </div>
+        <div id="stats_container">
+          <div class="stats_pair" id="medium_solved">
+            Medium<span id="medium_solved_count"></span>
+          </div>
+          <div class="stats_pair" id="medium_unsolved">
+            Medium<span id="medium_unsolved_count"></span>
+          </div>
+        </div>
+        <div id="stats_container">
+          <div class="stats_pair" id="hard_solved">Hard<span id="hard_solved_count"></span></div>
+          <div class="stats_pair" id="hard_unsolved">
+            Hard<span id="hard_unsolved_count"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
